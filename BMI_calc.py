@@ -14,3 +14,6 @@ def bmi_calc(weight, height):
         return "Your BMI is {}, and you are at risk of nutritional deficiency diseases and osteoporosis.".format(bmi)
 
 print(bmi_calc(weight, height))
+
+# To be rewritten as a class
+# In metric and imperial units
