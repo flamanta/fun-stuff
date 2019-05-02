@@ -1,17 +1,19 @@
 #Temperature converter
 #https://en.wikipedia.org/wiki/Conversion_of_units_of_temperature
 
-temp = float(input("Enter the temperature. "))
-from_temp_scale = input("Enter the abbreviation of the starting temperature scale. ")
-to_temp_scale = input("Enter the abbreviation of the destination temperature scale. ")
 
-def temp_convert(temp, from_temp_scale, to_temp_scale):
+
+def temp_convert():
     """Converts temperature from one temperature scale to another.
 
     Available temperature scales are:
     Celsius (C), Kelvin (K), Fahrenheit (F), Rankine (R), Delisle (De), Newton (N), Reaumur (Re), Romer (Ro).
 
     User to specify starting and ending temperature scales by indicating the abbreviations given in the brackets."""
+
+    temp = float(input("Enter the temperature. "))
+    from_temp_scale = input("Enter the abbreviation of the starting temperature scale. ")
+    to_temp_scale = input("Enter the abbreviation of the destination temperature scale. ")
 
     if from_temp_scale == 'C': #conversion from Celsius
         if to_temp_scale == 'K':
@@ -160,7 +162,7 @@ def temp_convert(temp, from_temp_scale, to_temp_scale):
     else:
         return 'Invalid abbreviation for starting temperature scale.'
 
-print(temp_convert(temp, from_temp_scale, to_temp_scale))
+print(temp_convert())
 
 # To implement: calibration table similar to that of on Wikipedia
 
