@@ -10,8 +10,10 @@ def temp_convert():
     Celsius (C), Kelvin (K), Fahrenheit (F), Rankine (R), Delisle (De), Newton (N), Reaumur (Re), Romer (Ro).
 
     User to specify starting and ending temperature scales by indicating the abbreviations given in the brackets."""
-
-    temp = float(input("Enter the temperature. "))
+    try:
+        temp = float(input("Enter the temperature. "))
+    except:
+        return 'Wrong input type for temperature. Please input a float.'
     from_temp_scale = input("Enter the abbreviation of the starting temperature scale. ")
     to_temp_scale = input("Enter the abbreviation of the destination temperature scale. ")
 
