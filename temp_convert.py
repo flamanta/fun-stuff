@@ -105,55 +105,55 @@ def temp_convert(temp, from_temp_scale, to_temp_scale):
 
     elif from_temp_scale == 'N': # conversion from Newton
         if to_temp_scale == 'C':
-            pass
+            return '{}N is approximately {}C.'.format(temp, round(temp*100/33, 2))
         elif to_temp_scale == 'F':
-            pass
+            return '{}N is approximately {}F.'.format(temp, round(temp*60/11+32, 2))
         elif to_temp_scale == 'K':
-            pass
+            return '{}N is approximately {}K.'.format(temp, round(temp*100/33+273.15, 2))
         elif to_temp_scale == 'R':
-            pass
+            return '{}N is approximately {}R.'.format(temp, round(temp*60/11+491.67, 2))
         elif to_temp_scale == 'De':
-            pass
+            return '{}N is approximately {}De.'.format(temp, round((33-temp)*50/11, 2))
         elif to_temp_scale == 'Re':
-            pass
+            return '{}N is approximately {}Re.'.format(temp, round(temp*80/33, 2))
         elif to_temp_scale == 'Ro':
-            pass
+            return '{}N is approximately {}Ro.'.format(temp, round(temp*35/22+7.5, 2))
         else:
             return 'Invalid abbreviation for destination temperature scale.'
 
     elif from_temp_scale == 'Re': # conversion from Reaumur
         if to_temp_scale == 'C':
-            pass
+            return '{}Re is approximately {}C.'.format(temp, round(temp*5/4, 2))
         elif to_temp_scale == 'F':
-            pass
+            return '{}Re is approximately {}F.'.format(temp, round(temp*9/4+32, 2))
         elif to_temp_scale == 'K':
-            pass
+            return '{}Re is approximately {}K.'.format(temp, round(temp*5/4+273.15, 2))
         elif to_temp_scale == 'Ra':
-            pass
+            return '{}Re is approximately {}Ra.'.format(temp, round(temp*9/4+491.67, 2))
         elif to_temp_scale == 'De':
-            pass
+            return '{}Re is approximately {}De.'.format(temp, round((80-temp)*15/8, 2))
         elif to_temp_scale == 'N':
-            pass
+            return '{}Re is approximately {}N.'.format(temp, round(temp*33/80, 2))
         elif to_temp_scale == 'Ro':
-            pass
+            return '{}Re is approximately {}Ro.'.format(temp, round(temp*21/32+7.5, 2))
         else:
             return 'Invalid abbreviation for destination temperature scale.'
 
     elif from_temp_scale == 'Ro': # conversion from Romer
         if to_temp_scale == 'C':
-            pass
+            return '{}Ro is approximately {}C.'.format(temp, round((temp-7.5)*40/21, 2))
         elif to_temp_scale == 'F':
-            pass
+            return '{}Ro is approximately {}F.'.format(temp, round((temp-7.5)*24/7+32, 2))
         elif to_temp_scale == 'K':
-            pass
+            return '{}Ro is approximately {}K.'.format(temp, round((temp-7.5)*40/21+273.15, 2))
         elif to_temp_scale == 'Ra':
-            pass
+            return '{}Ro is approximately {}Ra.'.format(temp, round((temp-7.5)*24/7+491.67, 2))
         elif to_temp_scale == 'De':
-            pass
+            return '{}Ro is approximately {}De.'.format(temp, round((60-temp)*20/7, 2))
         elif to_temp_scale == 'N':
-            pass
+            return '{}Ro is approximately {}N.'.format(temp, round((temp-7.5)*22/35, temp))
         elif to_temp_scale == 'Re':
-            pass
+            return '{}Ro is approximately {}Re.'.format(temp, round((temp-7.5)*32/21, temp))
         else:
             return 'Invalid abbreviation for destination temperature scale.'
 
