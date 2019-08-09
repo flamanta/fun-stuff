@@ -8,6 +8,8 @@ Repetition creates custom classes. Otherwise it stays as a function.
   - [BMI Calculator](#bmi-calculator)
   - [DNA Complement](#dna-complement)
   - [Temperature Converter (WIP)](#temperature-converter-wip)
+- [Author](#author)
+- [Show Your Support](#show-your-support)
 
 ## BMI Calculator
 
@@ -28,3 +30,13 @@ A Python function that generates the complementary DNA sequence in upper case.
 
 A custom Python class that converts from one temperature scale to another.<br><br>
 Available temperature scales are Celsius, Kelvin, Fahrenheit, Rankine, Delisle, Newton, Reaumur and Romer.
+
+# Author
+
+👤 **Wei Min Cher**
+
+- GitHub: [@flamanta](https://github.com/flamanta)
+
+# Show Your Support
+
+Please ⭐ this repository if this project helped you!
