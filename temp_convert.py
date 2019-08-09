@@ -1,6 +1,5 @@
-#Temperature converter
-#https://en.wikipedia.org/wiki/Conversion_of_units_of_temperature
-
+# Temperature converter
+# https://en.wikipedia.org/wiki/Conversion_of_units_of_temperature
 
 
 def temp_convert():
@@ -14,18 +13,20 @@ def temp_convert():
         temp = float(input("Enter the temperature. "))
     except:
         return 'Wrong input type for temperature. Please input a float.'
-    from_temp_scale = input("Enter the abbreviation of the starting temperature scale. ")
-    to_temp_scale = input("Enter the abbreviation of the destination temperature scale. ")
+    from_temp_scale = input(
+        "Enter the abbreviation of the starting temperature scale. ")
+    to_temp_scale = input(
+        "Enter the abbreviation of the destination temperature scale. ")
 
-    if from_temp_scale == 'C': #conversion from Celsius
+    if from_temp_scale == 'C':  # conversion from Celsius
         if to_temp_scale == 'K':
             return '{}C is approximately {}K.'.format(temp, round(temp+273.15, 2))
         elif to_temp_scale == 'F':
-            return '{}C is approximately {}F.'.format(temp, round(temp*9/5+32, 2)) 
+            return '{}C is approximately {}F.'.format(temp, round(temp*9/5+32, 2))
         elif to_temp_scale == 'R':
-            return '{}C is approximately {}R.'.format(temp, round((temp+273.15)*9/5, 2))  
+            return '{}C is approximately {}R.'.format(temp, round((temp+273.15)*9/5, 2))
         elif to_temp_scale == 'De':
-            return '{}C is approximately {}De.'.format(temp, round((100-temp)*3/2, 2)) 
+            return '{}C is approximately {}De.'.format(temp, round((100-temp)*3/2, 2))
         elif to_temp_scale == 'N':
             return '{}C is approximately {}De.'.format(temp, round(temp*33/100, 2))
         elif to_temp_scale == 'Re':
@@ -35,7 +36,7 @@ def temp_convert():
         else:
             return 'Invalid abbreviation for destination temperature scale.'
 
-    elif from_temp_scale == 'K': #conversion from Kelvin
+    elif from_temp_scale == 'K':  # conversion from Kelvin
         if to_temp_scale == 'C':
             return '{}K is approximately {}C.'.format(temp, round(temp-273.15, 2))
         elif to_temp_scale == 'F':
@@ -52,8 +53,8 @@ def temp_convert():
             return '{}K is approximately {}Ro.'.format(temp, round((temp-273.15)*21/40+7.5, 2))
         else:
             return 'Invalid abbreviation for destination temperature scale.'
-    
-    elif from_temp_scale == 'F': #conversion from Fahrenheit
+
+    elif from_temp_scale == 'F':  # conversion from Fahrenheit
         if to_temp_scale == 'C':
             return '{}F is approximately {}C.'.format(temp, round(5/9*(temp-32), 2))
         elif to_temp_scale == 'K':
@@ -71,7 +72,7 @@ def temp_convert():
         else:
             return 'Invalid abbreviation for destination temperature scale.'
 
-    elif from_temp_scale == 'R': # conversion from Rankine
+    elif from_temp_scale == 'R':  # conversion from Rankine
         if to_temp_scale == 'C':
             return '{}R is approximately {}C.'.format(temp, round((temp-491.67)*5/9, 2))
         elif to_temp_scale == 'F':
@@ -88,8 +89,8 @@ def temp_convert():
             return '{}R is approximately {}Ro.'.format(temp, round((temp-491.67)*7/24+7.5, 2))
         else:
             return 'Invalid abbreviation for destination temperature scale.'
-    
-    elif from_temp_scale == 'De': # conversion from Delisle
+
+    elif from_temp_scale == 'De':  # conversion from Delisle
         if to_temp_scale == 'C':
             return '{}De is approximately {}C.'.format(temp, round(100-temp*2/3, 2))
         elif to_temp_scale == 'F':
@@ -107,7 +108,7 @@ def temp_convert():
         else:
             return 'Invalid abbreviation for destination temperature scale.'
 
-    elif from_temp_scale == 'N': # conversion from Newton
+    elif from_temp_scale == 'N':  # conversion from Newton
         if to_temp_scale == 'C':
             return '{}N is approximately {}C.'.format(temp, round(temp*100/33, 2))
         elif to_temp_scale == 'F':
@@ -125,7 +126,7 @@ def temp_convert():
         else:
             return 'Invalid abbreviation for destination temperature scale.'
 
-    elif from_temp_scale == 'Re': # conversion from Reaumur
+    elif from_temp_scale == 'Re':  # conversion from Reaumur
         if to_temp_scale == 'C':
             return '{}Re is approximately {}C.'.format(temp, round(temp*5/4, 2))
         elif to_temp_scale == 'F':
@@ -143,7 +144,7 @@ def temp_convert():
         else:
             return 'Invalid abbreviation for destination temperature scale.'
 
-    elif from_temp_scale == 'Ro': # conversion from Romer
+    elif from_temp_scale == 'Ro':  # conversion from Romer
         if to_temp_scale == 'C':
             return '{}Ro is approximately {}C.'.format(temp, round((temp-7.5)*40/21, 2))
         elif to_temp_scale == 'F':
@@ -164,7 +165,7 @@ def temp_convert():
     else:
         return 'Invalid abbreviation for starting temperature scale.'
 
+
 print(temp_convert())
 
 # To implement: calibration table similar to that of on Wikipedia
-

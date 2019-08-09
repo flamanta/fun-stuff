@@ -1,22 +1,29 @@
-def DNA_complem():
+def aDNA_complem(input):
     """Returns the complementary DNA sequence for the provided DNA sequence in upper case."""
 
-    string = input('Please input the DNA string that you want the complementary sequence for here. ')
-    upper_str = string.upper()
-    bases = ['A', 'T', 'C', 'G']
-    result = ''
-    for char in upper_str:
-        if char in bases:
-            if char == 'A':
-                result += 'T'
-            elif char == 'T':
-                result += 'A'
-            elif char == 'C':
-                result += 'G'
-            elif char == 'G':
-                result += 'C'
-    if result == '':
-        return 'Wrong input type for DNA sequence. Please ensure that it is a string with characters A, T, C or G.'
-    return result
+    try:
+        inp_up = input.upper()
+    except AttributeError:
+        print('Please input characters A, T, C or G.')
+        return
 
-print(DNA_complem())
+    bases = ['A', 'T', 'C', 'G']
+
+    check = set(inp_up).issubset(bases)
+
+    if not check:
+        print('Please ensure that the string only has characters A, T, C or G.')
+    else:
+        result = ''
+        for char in inp_up:
+            if char in bases:
+                if char == 'A':
+                    result += 'T'
+                elif char == 'T':
+                    result += 'A'
+                elif char == 'C':
+                    result += 'G'
+                elif char == 'G':
+                    result += 'C'
+        print(result)
+        return result
