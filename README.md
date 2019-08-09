@@ -2,7 +2,7 @@
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-Sometimes I code the same thing so many times that it can be rewritten into a custom class. Otherwise it stays as a function.
+Repetition creates custom classes. Otherwise it stays as a function.
 
 - [Snippets](#snippets)
   - [BMI Calculator](#bmi-calculator)
@@ -13,7 +13,8 @@ Sometimes I code the same thing so many times that it can be rewritten into a cu
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue)](https://shields.io/) [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 
-A custom Python class which computes and displays health advice based on the user's BMI. Metric and imperial units supported.
+A custom Python class which computes and displays health advice based on the user's BMI.<br><br>
+Metric and imperial units supported.
 
 ## DNA Complement
 
@@ -25,4 +26,5 @@ A Python function that generates the complementary DNA sequence in upper case.
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue)](https://shields.io/) [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 
-A custom Python class that converts from one temperature scale to another. Available temperature scales are Celsius, Kelvin, Fahrenheit, Rankine, Delisle, Newton, Reaumur and Romer.
+A custom Python class that converts from one temperature scale to another.<br><br>
+Available temperature scales are Celsius, Kelvin, Fahrenheit, Rankine, Delisle, Newton, Reaumur and Romer.
