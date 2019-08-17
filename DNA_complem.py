@@ -5,26 +5,26 @@ def DNA_complem(input):
     try:
         inp_up = input.upper()
     except AttributeError:
-        print('Please input characters A, T, C and/or G.')
+        print("Please input characters A, T, C and/or G.")
         return
 
-    bases = ['A', 'T', 'C', 'G']
+    bases = ["A", "T", "C", "G"]
 
     check = set(inp_up).issubset(bases)
 
     if not check:
-        print('Please ensure that the input only has A, T, C and/or G.')
+        print("Please ensure that the input only has A, T, C and/or G.")
     else:
-        result = ''
+        result = ""
         for char in inp_up:
             if char in bases:
-                if char == 'A':
-                    result += 'T'
-                elif char == 'T':
-                    result += 'A'
-                elif char == 'C':
-                    result += 'G'
-                elif char == 'G':
-                    result += 'C'
+                if char == "A":
+                    result += "T"
+                elif char == "T":
+                    result += "A"
+                elif char == "C":
+                    result += "G"
+                elif char == "G":
+                    result += "C"
         print(result)
         return result
