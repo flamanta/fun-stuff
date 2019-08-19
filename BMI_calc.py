@@ -36,15 +36,11 @@ class bmi_calc:
                 bmi = round(self.weight / (self.height) ** 2 * 703, 1)
                 self.print_calc(bmi)
             except TypeError:
-                print(
-                    "Wrong input for either height or weight. Please input a number."
-                )
+                print("Wrong input for either height or weight. Please input a number.")
                 return
 
         else:
-            print(
-                "Use 'metric' for metric/SI units or 'imperial' for imperial units."
-            )
+            print("Use 'metric' for metric/SI units or 'imperial' for imperial units.")
             return
 
     def print_calc(self, bmi):

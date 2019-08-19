@@ -29,9 +29,7 @@ class tempConvert:
         try:
             self.origScale = self.origScale.upper()
         except AttributeError:
-            print(
-                "Please input the correct abbreviations for the temperature scales."
-            )
+            print("Please input the correct abbreviations for the temperature scales.")
             print("'C' for Celsius, 'K' for Kelvin, 'F' for Fahrenheit,")
             print("'R' for Rankine, 'DE' for Delisle, 'N' for Newton,")
             print("'RE' for Reaumur, 'RO' for Romer")
@@ -41,9 +39,7 @@ class tempConvert:
         try:
             self.newScale = self.newScale.upper()
         except AttributeError:
-            print(
-                "Please input the correct abbreviations for the temperature scales."
-            )
+            print("Please input the correct abbreviations for the temperature scales.")
             print("'C' for Celsius, 'K' for Kelvin, 'F' for Fahrenheit,")
             print("'R' for Rankine, 'DE' for Delisle, 'N' for Newton,")
             print("'RE' for Reaumur, 'RO' for Romer")
