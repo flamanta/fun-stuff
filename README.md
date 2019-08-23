@@ -2,7 +2,13 @@
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-Repetition creates custom classes. Otherwise it stays as a function.
+Custom classes and functions to speed things up.
+
+## Why? [![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action) <!-- omit in toc -->
+
+When I find myself needing to do a task repeatedly (typically in the scale of tens of times), I write custom functions to streamline the process.
+
+But sometimes even custom functions aren't enough, and they are rewritten into custom classes.
 
 ## Contents <!-- omit in toc -->
 
