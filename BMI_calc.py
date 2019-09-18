@@ -1,7 +1,7 @@
 class bmi_calc:
     """BMI calculator object, which calculates in both metric and imperial units.
 
-    Weight and height should be input as a float, units is input as a string
+    Inputs for weight and height as a float, inputs for units as a string
     ('metric' for metric/SI units, 'imperial' for imperial units)
 
     Default metric units: kg (weight), cm (height)
@@ -26,9 +26,7 @@ class bmi_calc:
                 bmi = round(self.weight / (m ** 2), 1)
                 self.print_calc(bmi)
             except TypeError:
-                print(
-                    "Wrong input for either height or weight.", "Please input a number."
-                )
+                print("Wrong input for either height or weight. Please input a number.")
                 return
 
         elif self.units == "imperial":
