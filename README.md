@@ -15,6 +15,7 @@ But sometimes even custom functions aren't enough, and they are rewritten into c
 - [BMI Calculator](#bmi-calculator)
 - [Coordinate System Conversions](#coordinate-system-conversions)
 - [DNA Complement](#dna-complement)
+- [Stress-Strain Curves](#stress-strain-curves)
 - [Temperature Converter (WIP)](#temperature-converter-wip)
 
 ## BMI Calculator
@@ -35,6 +36,12 @@ Python functions that convert NumPy arrays of Cartesian coordinates to and from 
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue)](https://shields.io/) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 A Python function that generates the complementary DNA sequence in upper case.
+
+## Stress-Strain Curves
+
+[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue)](https://shields.io/) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+A custom Python class that takes in .csv files of strains and stresses to plot the engineering and true stress-strain curves on the same axes.
 
 ## Temperature Converter (WIP)
 
