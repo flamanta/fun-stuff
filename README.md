@@ -50,12 +50,12 @@ A custom Python class that takes in .csv files of strains and stresses to plot t
 A custom Python class that converts from one temperature scale to another.<br><br>
 Available temperature scales are Celsius, Kelvin, Fahrenheit, Rankine, Delisle, Newton, Reaumur and Romer.
 
-# Author <!-- omit in toc -->
+## Another project by... <!-- omit in toc -->
 
-👤 **Wei Min Cher**
+👤 Wei Min Cher [@flamanta](https://github.com/flamanta)
 
-- GitHub: [@flamanta](https://github.com/flamanta)
+_Open Source Enthusiast | Engineer | Researcher | Writer_
 
-# Show Your Support <!-- omit in toc -->
+I am currently a EPD Electrical Engineering Sophomore at Singapore University of Technology and Design. Do drop me a message for any opportunities!
 
-Please ⭐ this repository if this project helped you!
+Please ⭐️ this repository if this project helped you!
